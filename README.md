@@ -19,11 +19,11 @@ output_totals.py
 
 	outputs the total amount of weight lifted for each exercise
 
-write_log_toxlsx.py
+write_log_to_xlsx.py
 	
 	write the lifting log to excel in a much more accessible and useful format than a text file obviously
 	overwrites the same document each time it is ran as it starts from the (0, 0) of excel 
 
 
 Dependencies:
-	xlsxwriter (for write_log_toxlsx.py)
+	xlsxwriter (for write_log_to_xlsx.py)

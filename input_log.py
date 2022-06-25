@@ -1,5 +1,7 @@
+#list of lists for that days lifting
 lifts = []
 
+#dictionary for each exercise in turn when writing to txt file
 lift_values = {
 "a" : "", #lift
 "b" : "", #date
@@ -10,6 +12,7 @@ lift_values = {
 "g" : 0 #set * reps * load
 }
 
+#functino for writing data to txt file in turn
 def write_to_log(lift, date, lift_load, lift_sets, lift_reps, total_reps, total_load):
     
     line = f"{lift} on {date} with {lift_load} kgs sets: {lift_sets} reps: {lift_reps} total reps: {total_reps} total load: {total_load:g}"
@@ -17,7 +20,8 @@ def write_to_log(lift, date, lift_load, lift_sets, lift_reps, total_reps, total_
     with open('lifting_log.txt', 'a') as f:
         f.write('\n')
         f.writelines(''.join(line))
-        
+
+#main code asking for lifting data inputs
 while True: 
     print("Do you want to enter a new days lifting?")
     n = input("y/n:")
@@ -40,5 +44,7 @@ while True:
 
             write_to_log(lift_values["a"], lift_values["b"], lift_values["c"], lift_values["d"], lift_values["e"], lift_values["f"], lift_values["g"])
 
+        lifts.clear()
+            
     elif n == "n":
         quit()

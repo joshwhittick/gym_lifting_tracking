@@ -12,7 +12,7 @@ lift_values = {
 "g" : 0 #set * reps * load
 }
 
-#functino for writing data to txt file in turn
+#function for writing data to txt file in turn
 def write_to_log(lift, date, lift_load, lift_sets, lift_reps, total_reps, total_load):
     
     line = f"{lift} on {date} with {lift_load} kgs sets: {lift_sets} reps: {lift_reps} total reps: {total_reps} total load: {total_load:g}"

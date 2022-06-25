@@ -4,7 +4,7 @@ developing a python program for tracking lifts in the gym and also some analysis
 
 currently teaching myself python so apologies for the uncode-like code
 
-note on python programs included:
+note on python files included:
 
 input_log.py
 
@@ -13,7 +13,7 @@ input_log.py
 
 interrogate.py 
 
-	asks for a specific exercise and can then print all the days on which that exercise was carried out and the associated data
+	asks for a specific exercise and can then print all the days on which that exercise was carried out and the associated set, reps & load etc.
 
 output_totals.py
 
@@ -21,9 +21,8 @@ output_totals.py
 
 write_log_to_xlsx.py
 	
-	write the lifting log to excel in a much more accessible and useful format than a text file obviously
-	overwrites the same document each time it is ran as it starts from the (0, 0) of excel 
-
+	write the lifting log to excel in a more visually accessible and useful format than a text file
+	overwrites the same document each time it is run as it starts from (0, 0) of excel 
 
 Dependencies:
 	xlsxwriter (for write_log_to_xlsx.py)

@@ -22,7 +22,8 @@ def write_to_log(lift, date, lift_load, lift_sets, lift_reps, total_reps, total_
         f.writelines(''.join(line))
 
 #main code asking for lifting data inputs
-while True: 
+n = "y"
+while n == "y": 
     print("Do you want to enter a new days lifting?")
     n = input("y/n:")
 
